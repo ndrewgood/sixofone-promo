@@ -1,5 +1,5 @@
 import Lottie from 'react-lottie';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import Head from 'next/head'
 
@@ -7,10 +7,39 @@ import styles from '../styles/Home.module.css'
 import logoAnimation from '../public/assets/lottie/logoAnimation';
 import hoverAnimation from '../public/assets/lottie/hoverAnimation';
 
+function useWindowSize() {
+  // Initialize state with undefined width/height so server and client renders match
+  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+  useEffect(() => {
+    // Handler to call on window resize
+    function handleResize() {
+      // Set window width/height to state
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+    // Call handler right away so state gets updated with initial window size
+    handleResize();
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); // Empty array ensures that effect is only run on mount
+  return windowSize;
+}
+
 export default function Home() {
 
   const [introStatus, setIntroStatus] = useState(true);
   const [isStopped, setIsStopped] = useState(true);
+
+  const size = useWindowSize();
+  console.log(size.width);
 
   const introOptions = {
     loop: false,
@@ -57,8 +86,8 @@ export default function Home() {
           <Lottie
           isClickToPauseDisabled 
           options={introOptions}
-            height={300}
-            width={300}
+            height={size.width > 500 ? 300 : 200}
+            width={size.width > 500 ? 300 : 200}
             eventListeners={[
               {
                 eventName: 'complete',
@@ -70,8 +99,8 @@ export default function Home() {
           <Lottie
           isClickToPauseDisabled 
           options={hoverCompleteOptions}
-            height={300}
-            width={300}
+            height={size.width > 500 ? 300 : 200}
+            width={size.width > 500 ? 300 : 200}
           isStopped={isStopped}
           eventListeners={[
             {
