@@ -24,7 +24,7 @@ const NavWide = () => {
 
   return(
     <nav id="nav-wide">    
-      <a href='/'>Six of One</a>
+      <Link href='/'>Six of One</Link>
       <Scrollspy className="sections" offset={ -10 } items={ ['features', 'furniture', 'impact'] } currentClassName="active">
         {/* <a href='/#vision-video'>Vision Video</a> */}
         <a href='#features'>Features</a>
@@ -43,7 +43,7 @@ const NavMobile = () => {
 
   return(
     <nav id="nav-mobile">
-      <a href='/'>Six of One</a>
+      <Link href='/'>Six of One</Link>
       <div className="social">
       <a href="https://www.instagram.com/sixofonefurniture/" passHref={true}><Instagram /></a>
         <a href="mailto:fchung20@student.scad.edu" passHref={true}><Email /></a>
