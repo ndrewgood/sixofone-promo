@@ -24,7 +24,7 @@ const NavWide = () => {
 
   return(
     <nav id="nav-wide">
-      <a href="/" className='title'>Six of One</a>
+      <Link href='/'>Six of One</Link>
       <Scrollspy className="sections" offset={ -10 } items={ ['features', 'furniture', 'impact'] } currentClassName="active">
         {/* <a href='/#vision-video'>Vision Video</a> */}
         <Link href='/#features'>Features</Link>
