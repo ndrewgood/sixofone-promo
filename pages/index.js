@@ -43,7 +43,7 @@ const NavMobile = () => {
 
   return(
     <nav id="nav-mobile">
-      <a href="/" className='title'>Six of One</a>
+      <Link href='/'>Six of One</Link>
       <div className="social">
       <Link href="https://www.instagram.com/sixofonefurniture/" passHref={true}><Instagram /></Link>
         <Link href="mailto:fchung20@student.scad.edu" passHref={true}><Email /></Link>
