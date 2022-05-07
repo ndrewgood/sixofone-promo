@@ -3,8 +3,6 @@ import { Canvas, useFrame, useLoader } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { OrbitControls } from "@react-three/drei";
 
-import chair from '../../public/assets/gltf/chair.gltf'
-
 function Box(props) {
   // This reference will give us direct access to the mesh
   const mesh = useRef()
