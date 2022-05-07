@@ -4,6 +4,7 @@ import Scrollspy from 'react-scrollspy'
 
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 
 import styles from '../styles/Home.module.css'
 
@@ -26,13 +27,13 @@ const NavWide = () => {
       <a href="/" className='title'>Six of One</a>
       <Scrollspy className="sections" offset={ -10 } items={ ['features', 'furniture', 'impact'] } currentClassName="active">
         {/* <a href='/#vision-video'>Vision Video</a> */}
-        <a href='/#features'>Features</a>
-        <a href='/#furniture'>Furniture</a>
-        <a href='/#impact'>Impact</a>
+        <Link href='/#features'>Features</Link>
+        <Link href='/#furniture'>Furniture</Link>
+        <Link href='/#impact'>Impact</Link>
       </Scrollspy>
       <div className="social">
-        <a href="https://www.instagram.com/sixofonefurniture/"><Instagram /></a>
-        <a href="mailto:fchung20@student.scad.edu"><Email /></a>
+        <Link href="https://www.instagram.com/sixofonefurniture/" passHref={true}><Instagram /></Link>
+        <Link href="mailto:fchung20@student.scad.edu" passHref={true}><Email /></Link>
       </div>
     </nav>
   )
@@ -44,8 +45,8 @@ const NavMobile = () => {
     <nav id="nav-mobile">
       <a href="/" className='title'>Six of One</a>
       <div className="social">
-      <a href="https://www.instagram.com/sixofonefurniture/"><Instagram /></a>
-        <a href="mailto:fchung20@student.scad.edu"><Email /></a>
+      <Link href="https://www.instagram.com/sixofonefurniture/" passHref={true}><Instagram /></Link>
+        <Link href="mailto:fchung20@student.scad.edu" passHref={true}><Email /></Link>
       </div>
     </nav>
   )
