@@ -24,7 +24,7 @@ const NavWide = () => {
 
   return(
     <nav id="nav-wide">    
-      <Link href='/'>Six of One</Link>
+      <Link href='/'><a className="title">Six of One</a></Link>
       <Scrollspy className="sections" offset={ -10 } items={ ['features', 'furniture', 'impact'] } currentClassName="active">
         {/* <a href='/#vision-video'>Vision Video</a> */}
         <a href='#features'>Features</a>
@@ -43,7 +43,7 @@ const NavMobile = () => {
 
   return(
     <nav id="nav-mobile">
-      <Link href='/'>Six of One</Link>
+      <Link href='/'><a className="title">Six of One</a></Link>
       <div className="social">
       <a href="https://www.instagram.com/sixofonefurniture/" passHref={true}><Instagram /></a>
         <a href="mailto:fchung20@student.scad.edu" passHref={true}><Email /></a>
@@ -86,6 +86,7 @@ export default function Home() {
       }
       <main id="hero">
           <h1>The future of<br/>furniture is <span>here</span>.</h1>
+          <div className="cta">Download our App</div>
           <div className='bgImg'></div>
       </main>
       <main id="quick-desc">
@@ -124,7 +125,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="feature">
+        <div className="feature upgrade">
           <div className="description">
             <div className="container-left">
               <h3>Upgrade</h3>
@@ -170,7 +171,7 @@ export default function Home() {
         <div className="impact-frames"></div>
         <ImpactModel />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
