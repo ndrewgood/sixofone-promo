@@ -69,7 +69,7 @@ const FurniturePlayground = () => {
                     </div>
                 </div>
             </div>
-            {/* <ThreePlayground buttonState={buttonStatus}/> */}
+            <ThreePlayground buttonState={buttonStatus}/>
         </div>
     )
 }
