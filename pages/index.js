@@ -23,17 +23,17 @@ import ImpactModel from '../public/assets/svg/model.svg'
 const NavWide = () => {
 
   return(
-    <nav id="nav-wide">
-      <Link href='/'>Six of One</Link>
+    <nav id="nav-wide">    
+      <a href='/'>Six of One</a>
       <Scrollspy className="sections" offset={ -10 } items={ ['features', 'furniture', 'impact'] } currentClassName="active">
         {/* <a href='/#vision-video'>Vision Video</a> */}
-        <Link href='/#features'>Features</Link>
-        <Link href='/#furniture'>Furniture</Link>
-        <Link href='/#impact'>Impact</Link>
+        <a href='#features'>Features</a>
+        <a href='#furniture'>Furniture</a>
+        <a href='#impact'>Impact</a>
       </Scrollspy>
       <div className="social">
-        <Link href="https://www.instagram.com/sixofonefurniture/" passHref={true}><Instagram /></Link>
-        <Link href="mailto:fchung20@student.scad.edu" passHref={true}><Email /></Link>
+        <a href="https://www.instagram.com/sixofonefurniture/" passHref={true}><Instagram /></a>
+        <a href="mailto:fchung20@student.scad.edu" passHref={true}><Email /></a>
       </div>
     </nav>
   )
@@ -43,10 +43,10 @@ const NavMobile = () => {
 
   return(
     <nav id="nav-mobile">
-      <Link href='/'>Six of One</Link>
+      <a href='/'>Six of One</a>
       <div className="social">
-      <Link href="https://www.instagram.com/sixofonefurniture/" passHref={true}><Instagram /></Link>
-        <Link href="mailto:fchung20@student.scad.edu" passHref={true}><Email /></Link>
+      <a href="https://www.instagram.com/sixofonefurniture/" passHref={true}><Instagram /></a>
+        <a href="mailto:fchung20@student.scad.edu" passHref={true}><Email /></a>
       </div>
     </nav>
   )
@@ -72,16 +72,20 @@ export default function Home() {
         <meta name="description" content="Coming Soon..." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <NavWide />
-      <NavMobile />
+      {
+        typeof window !== 'undefined' ?
+        <NavWide />
+        :
+        null
+      }
+      {
+        typeof window !== 'undefined' ?
+        <NavMobile />
+        :
+        null
+      }
       <main id="hero">
           <h1>The future of<br/>furniture is <span>here</span>.</h1>
-          {/* <Image
-            src={heroBg}
-            alt="Picture of Six of One Furniture"
-            width="1216"
-            height="401"
-          /> */}
           <div className='bgImg'></div>
       </main>
       <main id="quick-desc">
