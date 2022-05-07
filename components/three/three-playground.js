@@ -28,65 +28,65 @@ function Box(props) {
   )
 }
 
-const ChairModel = ({show}) => {
-  const gltf = useLoader(GLTFLoader, '/assets/gltf/chair.gltf');
-  return (
-    show ? 
-      <primitive object={gltf.scene} scale={3.5} position={[0, -2, 0]} />
-      :
-      null
-  );
-};
+// const ChairModel = ({show}) => {
+//   const gltf = useLoader(GLTFLoader, '/assets/gltf/chair.gltf');
+//   return (
+//     show ? 
+//       <primitive object={gltf.scene} scale={3.5} position={[0, -2, 0]} />
+//       :
+//       null
+//   );
+// };
 
-const DeskModel = ({show}) => {
-  const gltf = useLoader(GLTFLoader, '/assets/gltf/desk.gltf');
-  return (
-    show ?
-      <primitive object={gltf.scene} scale={2.5} position={[0, -2, 0]} />
-      :
-      null
-  );
-};
+// const DeskModel = ({show}) => {
+//   const gltf = useLoader(GLTFLoader, '/assets/gltf/desk.gltf');
+//   return (
+//     show ?
+//       <primitive object={gltf.scene} scale={2.5} position={[0, -2, 0]} />
+//       :
+//       null
+//   );
+// };
 
-const BookshelfModel = ({show}) => {
-  const gltf = useLoader(GLTFLoader, '/assets/gltf/bookshelf.gltf');
-  return (
-    show ? 
-      <primitive object={gltf.scene} scale={2.5} position={[0, -2.5, 0]} />
-    :
-    null
-  );
-};
+// const BookshelfModel = ({show}) => {
+//   const gltf = useLoader(GLTFLoader, '/assets/gltf/bookshelf.gltf');
+//   return (
+//     show ? 
+//       <primitive object={gltf.scene} scale={2.5} position={[0, -2.5, 0]} />
+//     :
+//     null
+//   );
+// };
 
-const StoragingModel = ({show}) => {
-  const gltf = useLoader(GLTFLoader, '/assets/gltf/storage.glb');
-  return (
-    show ?
-      <primitive object={gltf.scene} scale={2.5} position={[0, -2.5, 0]} />
-    :
-    null
-  );
-};
+// const StoragingModel = ({show}) => {
+//   const gltf = useLoader(GLTFLoader, '/assets/gltf/storage.glb');
+//   return (
+//     show ?
+//       <primitive object={gltf.scene} scale={2.5} position={[0, -2.5, 0]} />
+//     :
+//     null
+//   );
+// };
 
-const SideTableModel = ({show}) => {
-  const gltf = useLoader(GLTFLoader, '/assets/gltf/sideTable.glb');
-  return (
-    show ?
-      <primitive object={gltf.scene} scale={3} position={[0, -1.5, 0]} />
-    :
-    null
-  );
-};
+// const SideTableModel = ({show}) => {
+//   const gltf = useLoader(GLTFLoader, '/assets/gltf/sideTable.glb');
+//   return (
+//     show ?
+//       <primitive object={gltf.scene} scale={3} position={[0, -1.5, 0]} />
+//     :
+//     null
+//   );
+// };
 
-const ConsoleModel = ({show}) => {
-  const gltf = useLoader(GLTFLoader, '/assets/gltf/console.glb');
-  return (
-    show ?
-      <primitive object={gltf.scene} scale={2.5} position={[0, -1.5, 0]} />
-    :
-    null
-  );
-};
+// const ConsoleModel = ({show}) => {
+//   const gltf = useLoader(GLTFLoader, '/assets/gltf/console.glb');
+//   return (
+//     show ?
+//       <primitive object={gltf.scene} scale={2.5} position={[0, -1.5, 0]} />
+//     :
+//     null
+//   );
+// };
 
 
 
@@ -115,12 +115,12 @@ const ThreePlayground = ({buttonState}) => {
           <ambientLight />
           <pointLight position={[10, 10, 10]} />
           {/* {model} */}
-          <ChairModel show={buttonState == 1 ? true : false}/>
+          {/* <ChairModel show={buttonState == 1 ? true : false}/>
           <DeskModel show={buttonState == 2 ? true : false}/>
           <BookshelfModel show={buttonState == 3 ? true : false}/>
           <StoragingModel show={buttonState == 4 ? true : false}/>
           <SideTableModel show={buttonState == 5 ? true : false}/>
-          <ConsoleModel show={buttonState == 6 ? true : false}/>
+          <ConsoleModel show={buttonState == 6 ? true : false}/> */}
           <OrbitControls enableZoom={false} />
         </Suspense>
 
