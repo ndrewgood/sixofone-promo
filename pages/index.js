@@ -98,17 +98,17 @@ export default function Home() {
           <div className="aspect customize">
             <Customize />
             <h3>Customization</h3>
-            <p>Each product is made of modular interchangeable pieces, enabling completely customizable furniture. Every piece starts with a skeleton; designed to be upgraded over time, meaning that the material a chair is made of can level up as a budget grows!</p>
+            <p>Each furniture piece is made of Six of One’s unique modular system of components that can be customized in form, color, and add-ons, meaning you can make a chair that feels like you and level up as your budget grows!</p>
           </div>
           <div className="aspect rebuild">
             <Rebuild />
             <h3>Reconstruction</h3>
-            <p>Six of One furniture is meant to easily move and reconstruct. Each piece of furniture can break down into manageable pieces that can be easily transported. These pieces can also transform into various functions using the same basic pieces.</p>
+            <p>Ready to move or have a change of heart? Our component based furniture is designed to grow with you. Easily knock down your current furniture piece and transform it to another functional piece, expanding the lifecycle of the product whenever you need it.</p>
           </div>
           <div className="aspect visualize">
             <Visualize />
             <h3>Visualization</h3>
-            <p>Through our 3D virtual Spaces and AR Viewer, we provide tools to evaluate if the piece will work with pre-existing furniture and aid in iterating customization and placement until it feels just right.</p>
+            <p>Visualize your dream space with the Spaces feature on our mobile app.Through our 3D virtual Spaces and AR Viewer evaluate if the piece will work with pre-existing furniture and aid in iterating customization and placement until it feels just right.</p>
           </div>
         </div>
       </main>
@@ -121,7 +121,7 @@ export default function Home() {
           <div className="description">
             <div className="container-right">
               <h3>Shop</h3>
-              <p>We know the devil’s in the details, with our modular parts, you are able to personalize our products to your exact taste from the wood type, stain, and more straight from the app. Explore our wide range of products and be inspired by the Six of One Ambassadors’ customizations with each product.</p>
+              <p>We know the devil’s in the details, personalize our products to your exact taste from the wood type, stain, and more straight from the app.</p>
             </div>
           </div>
         </div>
@@ -129,7 +129,7 @@ export default function Home() {
           <div className="description">
             <div className="container-left">
               <h3>Upgrade</h3>
-              <p>Shop only for long term investments, upgrade to different customizations whenever you want a change or when you are financially able to. We understand that accidents happen, with our modular design, instead of throwing out the chair when damaged, order a component to replace it.</p>
+              <p> Shop only for long term investments, upgrade to different customizations whenever you want a change or when you are financially able to.</p>
               </div>
             </div>
           <div className="mock upgrade"></div>
@@ -139,7 +139,7 @@ export default function Home() {
           <div className="description">
             <div className="container-right">
               <h3>Rebuild</h3>
-              <p>Furniture makes a house a home. Plans change and you no longer need that chair? No worries, head to the Rebuild feature on the app and learn how you can transform your furniture to a functional piece that you will use, be it a desk, nightstand, or console, as you plan your next dream home.</p>
+              <p>Explore rebuild options on the app – learn how you can transform your furniture to a functional piece that you will use, be it a desk, nightstand, or console.</p>
             </div>
           </div>
         </div>
@@ -147,12 +147,12 @@ export default function Home() {
           <div className="tech">
             <div className="photo spaces"></div>
             <h3>Spaces</h3>
-            <p>Visualize your dream space with the Spaces feature. Drag and drop Six of One furniture into a 3D virtual room to plan out how you may want to organize your space. Spaces are fully customizable, with the ability to adjust dimensions, change materials, and add additional windows and doors. Fine tune the exact customizable options with each piece of furniture to try out new styles. Once you’re happy with your space, add your custom pieces to your cart for easy access.</p>
+            <p>Visualize your dream space in a 3D virtual room, adjust dimensions to fit your needs and shop furniture customizations directly from Spaces.</p>
           </div>
           <div className="tech">
             <div className="photo arViewer"></div>
             <h3>AR Viewer</h3>
-            <p>Whether you’re customizing your furniture piece or adding furniture to your Space, quickly launch Six of One’s AR Viewer to visualize the piece in augmented reality. Using plane detection, the furniture will appear on the gound in front of you with accurate size dimensions. Change the wood type, stain, and add-ons in the AR Viewer as well to try out different styles. Once you’re done, you’re able to leave the AR viewer, or add to cart directly from the viewer.</p>
+            <p>Using plane detection and latest AR technology, your custom furniture unique to you will appear on the ground in front of you with accurate size dimensions to help you make an informed choice.</p>
           </div>
         </div>
       </main>
@@ -161,7 +161,7 @@ export default function Home() {
           <div className="image1"></div>
           <div className="image2"></div>
           <h1>Six of One Furniture</h1>
-          <p>Each furniture piece is made of Six of One’s unique modular system consisting of bases, joinery, and structure . All components are made out of wood and can be customized in form, color, and add-ons that we provide for additional comfort. We achieve maximum sustainability by minimizing our materials to wood and standard recyclable screws for structural support. This makes it easier to recycle, upgrade, or rebuild into other furniture, therefore expanding the lifecycle of the product.</p>
+          <p>We are committed to making sustainable furniture, all modular components are made out of wood and minimal standard recyclable screws are used for structural support. This also makes it easier to recycle, upgrade, or rebuild into other furniture, therefore expanding the lifecycle of the product.</p>
         </div>
         <FurniturePlayground />
       </main>
